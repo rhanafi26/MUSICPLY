@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-like Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <h1><i class="fas fa-heart love-icon"></i> Ma Lovee</h1>
+            <ul class="playlist">
+                <li class="active" data-playlist="all">Laguu</li>
+                <li data-playlist="favorites">Favvvvvv</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="song-list">
+            </div>
+        </div>
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <div class="now-playing">
+                <img src="" alt="Album Cover" id="now-playing-cover">
+                <div class="song-info">
+                    <h4 id="now-playing-title">No song selected</h4>
+                    <p id="now-playing-artist">—</p>
+                </div>
+                <i class="far fa-heart" id="favorite-btn"></i>
+            </div>
+            <div class="controls">
+                <button id="shuffle-btn"><i class="fas fa-random"></i></button>
+                <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+                <button class="play-btn" id="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="repeat-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-container">
+                <span class="time-start" id="time-start">0:00</span>
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span class="time-end" id="time-end">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Howler.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
