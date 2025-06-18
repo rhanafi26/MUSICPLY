@@ -71,24 +71,24 @@ const songs = [
         title: "Kids",
         artist: "Hindia",
         cover: "images/foto13.jpg",
-        file: "song/hindia-janji.mp3",
-        duration: "4.10",
+        file: "song/hindia-kids.mp3",
+        duration: "3.11",
         id: 3
     },
     {
         title: "Aku Tenang",
         artist: "ForTuenti",
         cover: "images/foto18.jpg",
-        file: "song/hindia-janji.mp3",
-        duration: "4.10",
+        file: "song/akutenang.mp3",
+        duration: "3.33",
         id: 4
     },
     {
         title: "All i want",
         artist: "Kodaline",
         cover: "images/foto20.jpg",
-        file: "song/hindia-janji.mp3",
-        duration: "4.10",
+        file: "song/alliwant.mp3",
+        duration: "4.54",
         id: 5
     }
 ];
